@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import * as faceapi from 'face-api.js';
-import { FaceMatcherContainer } from "./pages/FaceMatcher/FaceMatcherContainer";
+//import { FaceMatcherContainer } from "./pages/FaceMatcher/FaceMatcherContainer";
 
 const App = () => {
 
