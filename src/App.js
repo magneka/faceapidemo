@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import * as faceapi from 'face-api.js';
-//import { FaceMatcherContainer } from "./pages/FaceMatcher/FaceMatcherContainer";
+import { FaceMatcherContainer } from "./pages/FaceMatcher/FaceMatcherContainer";
 
 const App = () => {
 
@@ -93,12 +93,11 @@ const App = () => {
       })
     )
   }
-// {isReady && <FaceMatcherContainer faceMatcher={faceMatcher} />}
   // Rendering
   return (
     <>
       {!isReady && <p>Please Wait. Initializing the face api, {task}.</p>}
-     
+      {isReady && <FaceMatcherContainer faceMatcher={faceMatcher} />}  
     </>
   )
 }

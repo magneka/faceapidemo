@@ -12,6 +12,15 @@ export const FaceMatcherContainer = (props) => {
     let image = await faceapi.bufferToImage(event.target.files[0])
     imageRef.current.src = image.src
 
+    const imageOnChange = async (event) => {
+        
+        console.log('We are loading a new image')
+      
+        // Viser bilde på skjermen
+        let image = await faceapi.bufferToImage(event.target.files[0])
+        imageRef.current.src = image.src
+    }
+
     return (
         <>
             <div>
